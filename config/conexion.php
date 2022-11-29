@@ -19,7 +19,7 @@
         }
         
         public function ruta(){
-			return "http://localhost:90/HelpDesk_dynamo/";
+			return "http://localhost:80/HelpDesk_dynamo/";
 		}
 
     }

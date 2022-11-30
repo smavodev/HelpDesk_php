@@ -6,7 +6,7 @@
 
         protected function Conexion(){
             try {
-				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesaayuda","root","");
+				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=andercode_helpdesk_backup","root","");
 				return $conectar;	
 			} catch (Exception $e) {
 				print "¡Error BD!: " . $e->getMessage() . "<br/>";

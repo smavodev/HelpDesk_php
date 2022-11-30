@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <?php require_once("../MainHead/head.php");?>
-	<title>AnderCode</>::Nuevo Ticket</title>
+	<title>Nemesis</>::Nuevo Ticket</title>
 </head>
 <body class="with-side-menu">
 

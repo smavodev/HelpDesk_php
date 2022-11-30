@@ -5,6 +5,8 @@ $(document).ready(function() {
         height: 150,
     });
 
-
+    $.post("../../controller/categoria.php?op=combo",function(data, status){
+        $('#cat_id').html(data);
+    });
 
 });

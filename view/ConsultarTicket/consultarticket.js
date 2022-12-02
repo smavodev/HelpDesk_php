@@ -117,4 +117,8 @@ $(document).ready(function(){
 
 });
 
+function ver(tick_id){
+    window.open('http://localhost:80/PERSONAL_HelpDesk/view/DetalleTicket/?ID='+ tick_id +'');
+}
+
 init();

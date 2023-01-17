@@ -1,5 +1,5 @@
 var tabla;
-var usu_id =  $('#user_idx').val();
+var usu_id =  $('#user_idx').val(); /* Usuario del ticket */
 var rol_id =  $('#rol_idx').val();
 
 function init(){
@@ -23,10 +23,10 @@ $(document).ready(function(){
                     'pdfHtml5'
                     ],
             "ajax":{
-                url: '../../controller/ticket.php?op=listar_x_usu',
+                url: '../../controller/ticket.php?op=listar_x_usu', /* Solo los tickets para los usuarios*/
                 type : "post",
                 dataType : "json",	
-                data:{ usu_id : usu_id },						
+                data:{ usu_id : usu_id },	/* Comparacion para ver solo los tickets del usuario */					
                 error: function(e){
                     console.log(e.responseText);	
                 }
@@ -76,7 +76,7 @@ $(document).ready(function(){
                     'pdfHtml5'
                     ],
             "ajax":{
-                url: '../../controller/ticket.php?op=listar',
+                url: '../../controller/ticket.php?op=listar',  /* Todos los tickets para los usaurios soporte*/
                 type : "post",
                 dataType : "json",						
                 error: function(e){
@@ -118,7 +118,7 @@ $(document).ready(function(){
 });
 
 function ver(tick_id){
-    window.open('http://localhost:80/PERSONAL_HelpDesk/view/DetalleTicket/?ID='+ tick_id +'');
+    window.open('http://localhost:80/HelpDesk_dynamo/view/DetalleTicket/?ID='+ tick_id +'');
 }
 
 init();

@@ -32,6 +32,7 @@
 
                 <div class="mobile-menu-right-overlay"></div>
 
+                <!-- Validacion por Roles y ID -->
                 <input type="hidden" id="user_idx" value="<?php echo $_SESSION["usu_id"] ?>"><!-- ID del Usuario-->
                 <input type="hidden" id="rol_idx" value="<?php echo $_SESSION["rol_id"] ?>"><!-- Rol del Usuario-->
 
